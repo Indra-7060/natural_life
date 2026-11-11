@@ -9,7 +9,7 @@
     <div class="col-xl-8">
         <div class="panel">
             <div class="panel__head"><h2>Items</h2></div>
-            <div class="table-scroll"><table class="a-table">
+            <div class="table-scroll"><table class="a-table a-table--fit">
                 <thead><tr><th></th><th>Product</th><th>Unit price</th><th>Qty</th><th class="text-end">Total</th></tr></thead>
                 <tbody><?php foreach ($o['items'] as $i): ?><tr>
                     <td style="width:60px"><img class="thumb" src="<?= media_url($i['image'], 'sm') ?>" alt=""></td>

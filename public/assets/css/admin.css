@@ -332,3 +332,23 @@ a.kpi--accent:hover { color: #cfd8c8; border-color: transparent; }
 .a-content .row > [class*=col-] { min-width: 0; }
 
 a.kpi.a-reveal.is-in:hover, .a-reveal.is-in.kpi:hover, .media-card.a-reveal.is-in:hover { transform: translateY(-6px); }
+
+/* on/off switches in tables: larger tap area on touch screens without changing their look */
+@media (max-width: 991.98px) {
+  .switch-btn { position: relative; }
+  .switch-btn::after { content: ""; position: absolute; inset: -11px -8px; }
+}
+
+/* previews show the whole picture (logos were being cropped to their middle) */
+.img-field__preview img { object-fit: contain; padding: 6px; }
+
+/* order items: the table fits a phone screen, so the totals are visible without scrolling sideways */
+.a-table--fit th, .a-table--fit td { white-space: normal !important; }
+@media (max-width: 575.98px) {
+  .a-table--fit { min-width: 0 !important; }
+  .a-table--fit th, .a-table--fit td { padding: 10px 7px; }
+  .a-table--fit th:first-child, .a-table--fit td:first-child { padding-left: 12px; }
+  .a-table--fit th:last-child, .a-table--fit td:last-child { padding-right: 12px; }
+  .a-table--fit .thumb { width: 36px; height: 36px; }
+  .a-table--fit td.fs-5 { font-size: 1.05rem !important; }
+}

@@ -128,9 +128,6 @@ _modules/*
 # Sugarlif project
 #-------------------------
 .env
-/public/uploads/media/lg/
-/public/uploads/media/md/
-/public/uploads/media/sm/
 /writable/emails/*
 !/writable/emails/index.html
 

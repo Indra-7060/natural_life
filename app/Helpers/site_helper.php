@@ -66,7 +66,8 @@ if (! function_exists('asset_url')) {
     function asset_url(string $path): string
     {
         $file = FCPATH . 'assets/' . ltrim($path, '/');
-        $v    = is_file($file) ? filemtime($file) : '1';
+        // On Vercel every file carries the same date, so the deployment's commit marks a new version instead.
+        $v = getenv('VERCEL_GIT_COMMIT_SHA') ? substr((string) getenv('VERCEL_GIT_COMMIT_SHA'), 0, 10) : (is_file($file) ? filemtime($file) : '1');
 
         return base_url('assets/' . ltrim($path, '/')) . '?v=' . $v;
     }

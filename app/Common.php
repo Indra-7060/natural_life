@@ -13,3 +13,15 @@
  *
  * @see: https://codeigniter.com/user_guide/extending/common.html
  */
+
+if (! function_exists('serverless')) {
+    /**
+     * True on a host with a read-only disk (Vercel sets VERCEL=1 itself).
+     * Sessions, cache and uploaded media then live in the database instead of in files.
+     * APP_SERVERLESS=1 switches the same behaviour on anywhere, for testing.
+     */
+    function serverless(): bool
+    {
+        return (bool) (getenv('VERCEL') ?: getenv('APP_SERVERLESS'));
+    }
+}

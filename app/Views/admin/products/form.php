@@ -154,7 +154,7 @@ $aRow = static function ($i, array $r = []) {
             <?= csrf_field() ?>
             <input class="form-control" style="max-width:420px" type="file" name="images[]" multiple accept="image/jpeg,image/png,image/webp" aria-label="Upload product images" required>
             <button class="btn btn-primary" type="submit"><i class="bi bi-upload"></i> Upload images</button>
-            <span class="form-text">JPG, PNG or WebP · up to 8 MB each · square images at least 1200 px work best. Originals are kept; optimised copies are created automatically.</span>
+            <span class="form-text">JPG, PNG or WebP · up to <?= (int) (\App\Libraries\MediaLibrary::maxBytes() / 1048576) ?> MB each · square images at least 1200 px work best. Originals are kept; optimised copies are created automatically.</span>
         </form>
     </div>
 </div>

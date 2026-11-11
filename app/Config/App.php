@@ -199,4 +199,30 @@ class App extends BaseConfig
      * @see http://www.w3.org/TR/CSP/
      */
     public bool $CSPEnabled = false;
+
+    public function __construct()
+    {
+        parent::__construct();
+
+        // On Vercel the address is known from the platform, so app_baseURL is optional there.
+        // The request's own host is trusted only when it is one Vercel assigned to this project.
+        if (getenv('VERCEL')) {
+            $this->forceGlobalSecureRequests = true;
+
+            if (getenv('app.baseURL') === false && getenv('app_baseURL') === false) {
+                $known = array_filter([
+                    getenv('VERCEL_PROJECT_PRODUCTION_URL') ?: null,
+                    getenv('VERCEL_BRANCH_URL') ?: null,
+                    getenv('VERCEL_URL') ?: null,
+                ]);
+                $host = strtolower((string) ($_SERVER['HTTP_HOST'] ?? ''));
+                if (! in_array($host, $known, true)) {
+                    $host = (string) (reset($known) ?: $host);
+                }
+                if ($host !== '') {
+                    $this->baseURL = 'https://' . $host . '/';
+                }
+            }
+        }
+    }
 }

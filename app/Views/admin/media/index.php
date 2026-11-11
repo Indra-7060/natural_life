@@ -7,7 +7,7 @@
         <input class="form-control" style="max-width:380px" type="file" name="files[]" multiple accept="image/jpeg,image/png,image/webp,image/gif,image/svg+xml" aria-label="Choose images" required>
         <select class="form-select" style="max-width:190px" name="folder" aria-label="Folder"><?php foreach ($folders as $f): ?><option value="<?= $f ?>" <?= ($folder ?: 'general') === $f ? 'selected' : '' ?>><?= ucfirst($f) ?></option><?php endforeach ?></select>
         <button class="btn btn-primary" type="submit"><i class="bi bi-upload"></i> Upload</button>
-        <span class="form-text">JPG, PNG, WebP, GIF or SVG · up to 8 MB each. The original is kept untouched; fast-loading copies are generated automatically.</span>
+        <span class="form-text">JPG, PNG, WebP, GIF or SVG · up to <?= (int) (\App\Libraries\MediaLibrary::maxBytes() / 1048576) ?> MB each. The original is kept untouched; fast-loading copies are generated automatically.</span>
     </form>
 </div>
 <div class="panel">

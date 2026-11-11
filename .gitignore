@@ -137,3 +137,6 @@ _modules/*
 
 # upload package and database export (contains site data)
 /deploy/
+
+# Vercel CLI link folder
+.vercel

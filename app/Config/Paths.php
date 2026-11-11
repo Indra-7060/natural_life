@@ -87,4 +87,18 @@ class Paths
      * value - the directory should not be publicly accessible.
      */
     public string $envDirectory = __DIR__ . '/../../';
+
+    public function __construct()
+    {
+        // On a read-only host only the temporary folder can be written to. Nothing kept
+        // there survives, so it is used for scratch files only (see serverless()).
+        if (getenv('VERCEL') || getenv('APP_SERVERLESS')) {
+            $this->writableDirectory = rtrim(sys_get_temp_dir(), '/\\') . '/sugarlif-writable';
+            foreach (['', '/cache', '/logs', '/session', '/uploads', '/emails', '/debugbar', '/media'] as $dir) {
+                if (! is_dir($this->writableDirectory . $dir)) {
+                    @mkdir($this->writableDirectory . $dir, 0775, true);
+                }
+            }
+        }
+    }
 }

@@ -20,9 +20,26 @@ class MediaLibrary
 
     private string $base;
 
+    /** Where files shipped with the site live (always public/uploads/media/). */
+    private string $public;
+
+    /** Set on a read-only host: files are worked on in a scratch folder, then kept in the database. */
+    private ?MediaStore $store = null;
+
     public function __construct()
     {
-        $this->base = rtrim(FCPATH, '/\\') . '/uploads/media/';
+        $this->public = rtrim(FCPATH, '/\\') . '/uploads/media/';
+        $this->base   = $this->public;
+        if (serverless()) {
+            $this->base  = rtrim(WRITEPATH, '/\\') . '/media/';
+            $this->store = new MediaStore();
+        }
+    }
+
+    /** Largest upload the current host can receive. */
+    public static function maxBytes(): int
+    {
+        return serverless() ? 4 * 1024 * 1024 : self::MAX_BYTES;
     }
 
     /** Validates and stores an uploaded file; returns the media row. */
@@ -31,8 +48,8 @@ class MediaLibrary
         if (! $file->isValid() || $file->hasMoved()) {
             throw new RuntimeException($file->getErrorString() ?: 'The upload failed.');
         }
-        if ($file->getSize() > self::MAX_BYTES) {
-            throw new RuntimeException('Images must be 8 MB or smaller.');
+        if ($file->getSize() > self::maxBytes()) {
+            throw new RuntimeException('Images must be ' . (int) (self::maxBytes() / 1048576) . ' MB or smaller.');
         }
         $ext  = strtolower($file->getClientExtension());
         $mime = $file->getMimeType(); // detected from file contents, not the client header
@@ -104,6 +121,8 @@ class MediaLibrary
             'alt_text'   => $alt,
             'source_url' => $sourceUrl,
         ];
+        $this->moveToStore($path, $row['mime']);
+
         $existing = $model->where('path', $path)->first();
         if ($existing) {
             $model->update($existing['id'], $row);
@@ -112,6 +131,24 @@ class MediaLibrary
         }
 
         return $model->find($model->insert($row, true));
+    }
+
+    /** Read-only host: copies the original and its renditions into the database and clears the scratch files. */
+    private function moveToStore(string $path, string $mime): void
+    {
+        if ($this->store === null) {
+            return;
+        }
+        $files = ['original/' . $path => $mime];
+        foreach (array_keys(self::VARIANTS) as $key) {
+            $files[$key . '/' . preg_replace('/\.[a-z0-9]+$/i', '.webp', $path)] = 'image/webp';
+        }
+        foreach ($files as $relative => $type) {
+            if (is_file($this->base . $relative)) {
+                $this->store->put($relative, $this->base . $relative, $type);
+                @unlink($this->base . $relative);
+            }
+        }
     }
 
     private function makeVariants(string $path, int $width, int $height): void
@@ -146,9 +183,17 @@ class MediaLibrary
     /** Removes the original, its renditions and the row. */
     public function delete(array $media): void
     {
-        @unlink($this->base . 'original/' . $media['path']);
+        $files = ['original/' . $media['path']];
         foreach (array_keys(self::VARIANTS) as $key) {
-            @unlink($this->base . $key . '/' . preg_replace('/\.[a-z0-9]+$/i', '.webp', $media['path']));
+            $files[] = $key . '/' . preg_replace('/\.[a-z0-9]+$/i', '.webp', $media['path']);
+        }
+        foreach ($files as $relative) {
+            if ($this->store !== null) {
+                // files shipped with the site cannot be removed from a read-only host; the record still is
+                $this->store->delete($relative);
+            } else {
+                @unlink($this->base . $relative);
+            }
         }
         model(MediaModel::class)->delete($media['id']);
     }
@@ -185,7 +230,8 @@ class MediaLibrary
         $base = slugify($base);
         $name = $base . '.' . $ext;
         $i    = 2;
-        while (is_file($this->base . 'original/' . $folder . '/' . $name)) {
+        while (is_file($this->public . 'original/' . $folder . '/' . $name)
+            || ($this->store !== null && model(MediaModel::class)->where('path', $folder . '/' . $name)->countAllResults() > 0)) {
             $name = $base . '-' . $i++ . '.' . $ext;
         }
 

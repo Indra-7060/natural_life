@@ -51,7 +51,8 @@ if (! function_exists('media_url')) {
         $path = ltrim($path, '/');
         if ($size !== 'original' && ! preg_match('/\.(svg|gif)$/i', $path)) {
             $variant = 'uploads/media/' . $size . '/' . preg_replace('/\.[a-z0-9]+$/i', '.webp', $path);
-            if (is_file(FCPATH . $variant)) {
+            if (is_file(FCPATH . $variant)
+                || (serverless() && (new \App\Libraries\MediaStore())->has(substr($variant, strlen('uploads/media/'))))) {
                 return base_url($variant);
             }
         }

@@ -150,6 +150,19 @@ Changes made after the first redesign, each at the owner's request: hero play / 
 
 Not verified: the hero auto-advance timing, hover effects and reveal animations at full frame rate (the review browser throttles them in the background). The hero, category, story and benefits changes were checked by measurement and screenshot with animations switched off.
 
+### Deployment packages
+
+| Check | Result |
+|---|---|
+| Upload package for PHP hosting (`deploy/sugarlif-upload.zip`) unpacked into an empty folder, database file imported into a new empty database, site served from the unpacked `public_html` | 42 tables imported with identical row counts; home, shop, product, blog, cart, contact, admin sign-in, sitemap, a stylesheet and a product image loaded; styled 404 for unknown addresses |
+| Scan for names that differ only by letter case (would fail on Linux) | 139 view references, 134 classes, 12 page templates, 41 media records: no mismatches |
+| Read-only-host mode used on Vercel (`php docs/tools/serverless-test.php`) | 27 / 27: pages through `api/index.php`, sessions in `ci_sessions`, cache in `cache_store`, sign-in limit through the database, 2.3 MB upload stored in 10 pieces and served back identical, nothing written to `writable/` or `public/uploads/` |
+| Normal mode after these changes | 127 / 127 functional checks, 48 / 48 public addresses |
+
+Defect found and fixed here: the first database export contained two leftover test cart rows and had the administrator's forced password change switched off. The export script now leaves out visitor data and always switches the forced change on.
+
+Not verified: any real upload to a hosting account or to Vercel; Linux, Apache, HTTPS; an external or encrypted database connection; uploads without the `gd` extension. See `DEPLOYMENT.md` and `VERCEL.md`.
+
 ## 5. Content verification against natural-life.in
 
 | Item | Source | New site |

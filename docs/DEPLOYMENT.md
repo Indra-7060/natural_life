@@ -5,7 +5,7 @@ This guide puts the store on ordinary shared hosting. Everything you upload is i
 | File | What it is |
 |---|---|
 | `deploy/sugarlif-upload.zip` | The site. Contains two folders: `sugarlif` (the application) and `public_html` (the web root). |
-| `deploy/sugarlif_db.sql` | The database: 39 tables with all products, pages, articles, menus, settings and redirects. No orders or customers. |
+| `deploy/sugarlif_db.sql` | The database: 42 tables with all products, pages, articles, menus, settings and redirects. No orders, customers, carts or sessions. |
 
 To rebuild both files after any change (MySQL must be running):
 
@@ -36,7 +36,7 @@ Note the database name, user name and password for step 4.
 
 cPanel → *phpMyAdmin* → click the new database in the left column → *Import* → choose `sugarlif_db.sql` → *Import*.
 
-It should finish with 39 tables.
+It should finish with 42 tables.
 
 ### 3. Upload the files
 
@@ -115,7 +115,7 @@ To see the full error on screen for a moment, change `CI_ENVIRONMENT` to `develo
 
 Tested on the development machine (Windows, PHP 8.3, MariaDB 10.4):
 
-- The zip was unpacked into an empty folder and the SQL file imported into a new empty database: 39 tables, 361 rows, row counts identical to the working database.
+- The zip was unpacked into an empty folder and the SQL file imported into a new empty database: 42 tables, 326 rows, row counts identical to the working database. The file leaves out carts, sessions, cache and password-reset requests, and switches on the forced password change for the first administrator.
 - The unpacked copy was served from its `public_html` folder with the application in the neighbouring `sugarlif` folder. Home, shop, a product page, blog, cart, contact, admin sign-in page, sitemap, robots file, a stylesheet and a product image all loaded; checkout redirected as expected with an empty cart; an unknown address returned the styled 404 page; no page linked back to `localhost`.
 - A scan for names that work on Windows but fail on Linux (letter-case differences): 139 view references, 134 classes, 12 database-named page templates and 41 media records checked, no mismatches.
 - The packaged `.env` contains no password and no development values.

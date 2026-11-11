@@ -200,5 +200,32 @@ class Database extends Config
         if (ENVIRONMENT === 'testing') {
             $this->defaultGroup = 'tests';
         }
+
+        // Cloud databases usually accept encrypted connections only.
+        //   DB_SSL=true          switch encryption on
+        //   DB_SSL_CA=<PEM text> the provider's CA certificate, if it gives you one
+        //   DB_SSL_VERIFY=false  skip the certificate check (only if the provider's CA is unavailable)
+        if (in_array(strtolower((string) getenv('DB_SSL')), ['1', 'true', 'yes', 'on'], true)) {
+            $ca  = null;
+            $pem = (string) getenv('DB_SSL_CA');
+            if (str_contains($pem, 'BEGIN CERTIFICATE')) {
+                $ca = rtrim(sys_get_temp_dir(), '/\\') . '/db-ca-' . md5($pem) . '.pem';
+                if (! is_file($ca)) {
+                    file_put_contents($ca, str_replace('\n', "\n", $pem));
+                }
+            } else {
+                foreach (['/etc/pki/tls/certs/ca-bundle.crt', '/etc/ssl/certs/ca-certificates.crt', '/etc/ssl/cert.pem'] as $bundle) {
+                    if (is_file($bundle)) {
+                        $ca = $bundle;
+                        break;
+                    }
+                }
+            }
+            $this->default['encrypt'] = [
+                'ssl_ca'     => $ca,
+                'ssl_cipher' => $ca === null ? 'HIGH' : null,
+                'ssl_verify' => ! in_array(strtolower((string) getenv('DB_SSL_VERIFY')), ['0', 'false', 'no', 'off'], true),
+            ];
+        }
     }
 }

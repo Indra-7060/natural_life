@@ -1,0 +1,23 @@
+# Never upload local secrets: on Vercel every value comes from Environment Variables.
+.env
+.env.*
+!.env.example
+
+# Installed on Vercel by Composer during the build.
+/vendor
+
+# Local-only material.
+/deploy
+/docs
+/tests
+/builds
+/.claude
+/.vscode
+/writable/cache/*
+/writable/logs/*
+/writable/session/*
+/writable/debugbar/*
+/writable/emails/*
+/writable/uploads/*
+phpunit.dist.xml
+*.log

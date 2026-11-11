@@ -10,6 +10,7 @@ use CodeIgniter\Cache\Handlers\MemcachedHandler;
 use CodeIgniter\Cache\Handlers\PredisHandler;
 use CodeIgniter\Cache\Handlers\RedisHandler;
 use CodeIgniter\Cache\Handlers\WincacheHandler;
+use App\Libraries\DatabaseCacheHandler;
 use CodeIgniter\Config\BaseConfig;
 
 class Cache extends BaseConfig
@@ -145,6 +146,7 @@ class Cache extends BaseConfig
      */
     public array $validHandlers = [
         'apcu'      => ApcuHandler::class,
+        'database'  => DatabaseCacheHandler::class,
         'dummy'     => DummyHandler::class,
         'file'      => FileHandler::class,
         'memcached' => MemcachedHandler::class,
@@ -195,4 +197,14 @@ class Cache extends BaseConfig
      * @var list<int>
      */
     public array $cacheStatusCodes = [];
+
+    public function __construct()
+    {
+        parent::__construct();
+
+        // No writable disk, and requests are spread over many machines: share the cache through the database.
+        if (serverless()) {
+            $this->handler = 'database';
+        }
+    }
 }

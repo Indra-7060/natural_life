@@ -24,12 +24,27 @@ if (! is_dir($out)) {
 
 // ---- 1. database ---------------------------------------------------------
 $sqlFile = $out . 'sugarlif_db.sql';
-$cmd = '"' . $dump . '" --user=root --host=localhost --single-transaction --skip-comments --skip-add-locks'
-     . ' --no-tablespaces --default-character-set=utf8mb4 --result-file="' . $sqlFile . '" sugarlif_db';
-exec($cmd . ' 2>&1', $o, $code);
-if ($code !== 0 || ! is_file($sqlFile) || filesize($sqlFile) < 10000) {
+$common  = '"' . $dump . '" --user=root --host=localhost --single-transaction --skip-comments --skip-add-locks'
+         . ' --no-tablespaces --default-character-set=utf8mb4';
+// Visitor and scratch data never leaves this machine: only the table layouts are exported for these.
+$transient = ['carts', 'cart_items', 'ci_sessions', 'cache_store', 'password_resets'];
+$ignore    = implode('', array_map(static fn (string $t): string => ' --ignore-table=sugarlif_db.' . $t, $transient));
+
+exec($common . ' --no-data --result-file="' . $sqlFile . '.structure" sugarlif_db 2>&1', $o, $code1);
+exec($common . ' --no-create-info' . $ignore . ' --result-file="' . $sqlFile . '.data" sugarlif_db 2>&1', $o, $code2);
+if ($code1 !== 0 || $code2 !== 0 || ! is_file($sqlFile . '.data') || filesize($sqlFile . '.data') < 10000) {
     exit("Database export failed: " . implode("\n", $o) . "\n");
 }
+file_put_contents(
+    $sqlFile,
+    // MariaDB writes "current_timestamp()"; the plain keyword is understood by MySQL 8 and TiDB too
+    str_ireplace('DEFAULT current_timestamp()', 'DEFAULT CURRENT_TIMESTAMP', file_get_contents($sqlFile . '.structure'))
+    . "\n" . file_get_contents($sqlFile . '.data')
+    . "\n-- The first administrator must choose a new password at the first sign-in.\n"
+    . "UPDATE `admin_users` SET `must_change_password` = 1, `last_login_at` = NULL;\n",
+);
+unlink($sqlFile . '.structure');
+unlink($sqlFile . '.data');
 echo 'database export: ' . round(filesize($sqlFile) / 1024) . " KB\n";
 
 // ---- 2. production .env ---------------------------------------------------

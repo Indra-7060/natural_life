@@ -156,6 +156,9 @@ $routes->group('admin', ['namespace' => 'App\Controllers\Admin'], static functio
     });
 });
 
+// Media kept in the database (read-only hosts). Files present in public/uploads never reach this.
+$routes->get('uploads/media/(:any)', 'MediaFile::show/$1');
+
 // ---------------------------------------------------------------- CMS pages (must stay last)
 // Legacy commerce URLs kept from the original site.
 $routes->get('my-account', 'Account::dashboard', ['filter' => 'customerauth']);

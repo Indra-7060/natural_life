@@ -12,7 +12,7 @@ $value = (string) ($value ?? '');
             <label class="btn btn-light btn-sm mb-0"><i class="bi bi-upload"></i> Upload<input type="file" name="<?= $name ?>_upload" accept="image/jpeg,image/png,image/webp,image/gif,image/svg+xml" hidden data-image-upload></label>
             <button class="btn btn-light btn-sm" type="button" data-image-clear <?= $value ? '' : 'hidden' ?>><i class="bi bi-x-lg"></i> Remove</button>
         </div>
-        <div class="form-text" data-image-name><?= $value ? esc($value) : 'JPG, PNG, WebP, GIF or SVG · up to 8 MB' ?></div>
+        <div class="form-text" data-image-name><?= $value ? esc($value) : 'JPG, PNG, WebP, GIF or SVG · up to ' . (int) (\App\Libraries\MediaLibrary::maxBytes() / 1048576) . ' MB' ?></div>
         <?php if (! empty($help)): ?><div class="form-text"><?= esc($help) ?></div><?php endif ?>
     </div>
 </div>

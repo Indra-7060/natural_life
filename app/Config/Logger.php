@@ -3,6 +3,7 @@
 namespace Config;
 
 use CodeIgniter\Config\BaseConfig;
+use CodeIgniter\Log\Handlers\ErrorlogHandler;
 use CodeIgniter\Log\Handlers\FileHandler;
 use CodeIgniter\Log\Handlers\HandlerInterface;
 
@@ -148,4 +149,18 @@ class Logger extends BaseConfig
         //     'messageType' => 0,
         // ],
     ];
+
+    public function __construct()
+    {
+        parent::__construct();
+
+        // Log files would be lost: send messages to the host's own log viewer instead.
+        if (serverless()) {
+            $this->handlers = [
+                ErrorlogHandler::class => [
+                    'handles' => ['critical', 'alert', 'emergency', 'error', 'warning', 'notice'],
+                ],
+            ];
+        }
+    }
 }

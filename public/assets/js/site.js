@@ -459,3 +459,17 @@
   onFrame();
   if (toTop) toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: reduced ? 'auto' : 'smooth' }));
 })();
+
+/* footer link groups: closed on phones (tap to open), always open on larger screens */
+(() => {
+  const groups = document.querySelectorAll('.footer-col');
+  if (!groups.length) return;
+  const phone = window.matchMedia('(max-width: 575.98px)');
+  const sync = () => groups.forEach((g) => {
+    g.open = !phone.matches;
+    const s = g.querySelector('summary');
+    if (s) s.tabIndex = phone.matches ? 0 : -1;
+  });
+  sync();
+  phone.addEventListener('change', sync);
+})();

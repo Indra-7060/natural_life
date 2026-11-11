@@ -51,20 +51,24 @@ $columns = ['Shop' => site_menu('footer_shop'), 'Company' => site_menu('footer_c
 
             <?php foreach ($columns as $title => $items): ?>
                 <nav aria-label="<?= esc($title, 'attr') ?>">
-                    <h6><?= esc($title) ?></h6>
+                    <details class="footer-col" open>
+                    <summary><h6><?= esc($title) ?></h6><i class="bi bi-chevron-down" aria-hidden="true"></i></summary>
                     <ul class="footer-links">
                         <?php foreach ($items as $item): ?><li><a href="<?= menu_href($item['url']) ?>"><?= esc($item['label']) ?></a></li><?php endforeach ?>
                     </ul>
+                    </details>
                 </nav>
             <?php endforeach ?>
 
             <div>
-                <h6>Contact</h6>
+                <details class="footer-col" open>
+                <summary><h6>Contact</h6><i class="bi bi-chevron-down" aria-hidden="true"></i></summary>
                 <ul class="footer-contact">
                     <li><i class="bi bi-geo-alt" aria-hidden="true"></i><span><?= esc(setting('company_name')) ?><br><?= esc(setting('address_line1')) ?>,<br><?= esc(setting('address_city')) ?> <?= esc(setting('address_postcode')) ?>. <?= esc(setting('address_state')) ?></span></li>
                     <li><i class="bi bi-telephone" aria-hidden="true"></i><a href="tel:<?= esc(preg_replace('/[^0-9+]/', '', setting('contact_phone')), 'attr') ?>"><?= esc(setting('contact_phone')) ?></a></li>
                     <li><i class="bi bi-envelope" aria-hidden="true"></i><span><a href="mailto:<?= esc(setting('contact_email_primary'), 'attr') ?>"><?= esc(setting('contact_email_primary')) ?></a><?php if (setting('contact_email_sales')): ?><br><a href="mailto:<?= esc(setting('contact_email_sales'), 'attr') ?>"><?= esc(setting('contact_email_sales')) ?></a><?php endif ?></span></li>
                 </ul>
+                </details>
             </div>
         </div>
 

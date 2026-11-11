@@ -1,0 +1,44 @@
+## Contact Us
+
+Home / Contact Us
+
+###
+
+Email Address
+
+[email protected]
+
+[email protected]
+
+###
+
+Phone Number
+
++91 800 729 1595
++91 800 729 1595
+
+###
+
+Office Address
+
+F-7, Sacred World Mall, Wanwadi,
+Pune 411040. Maharashtra
+
+## Get in Touch
+
+If you need to order in bulk, please don’t hesitate to contact us on +918007291595 via call or WhatsApp.
+
+[FIELD input name=form_fields[name] type=text placeholder=First Name]
+
+[FIELD input name=form_fields[field_19c40dd] type=text placeholder=Last Name]
+
+[FIELD input name=form_fields[email] type=email placeholder=Email]
+
+[FIELD input name=form_fields[field_239d630] type=email placeholder=Phone No.]
+
+[FIELD input name=form_fields[field_012dfc7] type=email placeholder=Subject]
+
+[FIELD textarea name=form_fields[message] type= placeholder=Write comment]
+
+Submit Now
+

@@ -1,0 +1,417 @@
+[
+  {
+    "file": "about-naturalife.html",
+    "title": "Our Profile – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/about-naturalife/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": [
+      "{\"@context\":\"https://schema.org/\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"name\":\"Home\",\"@id\":\"https://natural-life.in\"}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"name\":\"Our Profile\",\"@id\":\"https://natural-life.in/about-naturalife/\"}}]}"
+    ]
+  },
+  {
+    "file": "blog.html",
+    "title": "Blog – Sugarlif",
+    "description": "",
+    "canonical": "",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": []
+  },
+  {
+    "file": "cart.html",
+    "title": "Cart – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/cart/",
+    "og": {},
+    "robots": "max-image-preview:large, noindex, follow",
+    "jsonld": []
+  },
+  {
+    "file": "category_blog.html",
+    "title": "Blog – Sugarlif",
+    "description": "",
+    "canonical": "",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": []
+  },
+  {
+    "file": "certification.html",
+    "title": "Certification – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/certification/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": [
+      "{\"@context\":\"https://schema.org/\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"name\":\"Home\",\"@id\":\"https://natural-life.in\"}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"name\":\"Certification\",\"@id\":\"https://natural-life.in/certification/\"}}]}"
+    ]
+  },
+  {
+    "file": "checkout.html",
+    "title": "Cart – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/cart/",
+    "og": {},
+    "robots": "max-image-preview:large, noindex, follow",
+    "jsonld": []
+  },
+  {
+    "file": "contact-us.html",
+    "title": "Contact Us – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/contact-us/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": [
+      "{\"@context\":\"https://schema.org/\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"name\":\"Home\",\"@id\":\"https://natural-life.in\"}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"name\":\"Contact Us\",\"@id\":\"https://natural-life.in/contact-us/\"}}]}"
+    ]
+  },
+  {
+    "file": "demo.html",
+    "title": "Demo – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/demo/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": []
+  },
+  {
+    "file": "episode-2-the-day-sugar-went-to-whistler.html",
+    "title": "The Day Sugar Went to Whistler – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/episode-2-the-day-sugar-went-to-whistler/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": []
+  },
+  {
+    "file": "episode-3-can-you-trust-a-food-label.html",
+    "title": "Can You Trust a Food Label? – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/episode-3-can-you-trust-a-food-label/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": []
+  },
+  {
+    "file": "episode-4-the-secret-life-of-a-spoonful-of-sugar.html",
+    "title": "The Secret Life of a Spoonful of Sugar – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/episode-4-the-secret-life-of-a-spoonful-of-sugar/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": []
+  },
+  {
+    "file": "episode-5-sugar-on-trial.html",
+    "title": "Sugar on Trial – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/episode-5-sugar-on-trial/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": []
+  },
+  {
+    "file": "faq.html",
+    "title": "FAQ – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/faq/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": [
+      "{\"@context\":\"https://schema.org/\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"name\":\"Home\",\"@id\":\"https://natural-life.in\"}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"name\":\"FAQ\",\"@id\":\"https://natural-life.in/faq/\"}}]}"
+    ]
+  },
+  {
+    "file": "glycemic-index.html",
+    "title": "Glycemic Index – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/glycemic-index/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": [
+      "{\"@context\":\"https://schema.org/\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"name\":\"Home\",\"@id\":\"https://natural-life.in\"}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"name\":\"Glycemic Index\",\"@id\":\"https://natural-life.in/glycemic-index/\"}}]}"
+    ]
+  },
+  {
+    "file": "health-benefits-of-low-gi.html",
+    "title": "Health Benefits of Low GI – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/health-benefits-of-low-gi/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": [
+      "{\"@context\":\"https://schema.org/\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"name\":\"Home\",\"@id\":\"https://natural-life.in\"}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"name\":\"Health Benefits of Low GI\",\"@id\":\"https://natural-life.in/health-benefits-of-low-gi/\"}}]}"
+    ]
+  },
+  {
+    "file": "home.html",
+    "title": "Sugarlif – Natural Low GI Products | Low GI Sugar | Low GI Premix Tea | Low GI Jam | Low GI Sauces | GI Labs | Low GI Revolution | Low GI Products India | Low Glycemic Index | Alternate for Sugar | Wellness",
+    "description": "",
+    "canonical": "https://natural-life.in/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": []
+  },
+  {
+    "file": "home2121.html",
+    "title": "home2165161 – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/home2121/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": []
+  },
+  {
+    "file": "if-sugar-had-a-passport.html",
+    "title": "If Sugar Had a Passport… – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/if-sugar-had-a-passport/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": []
+  },
+  {
+    "file": "low-gi-diet-sugar.html",
+    "title": "Low GI Diet Sugar – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/low-gi-diet-sugar/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": [
+      "{\"@context\":\"https://schema.org/\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"name\":\"Home\",\"@id\":\"https://natural-life.in\"}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"name\":\"Low GI Diet Sugar\",\"@id\":\"https://natural-life.in/low-gi-diet-sugar/\"}}]}"
+    ]
+  },
+  {
+    "file": "low-gi-diet-vs-other-diet.html",
+    "title": "Low GI Diet Vs Other Diet – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/low-gi-diet-vs-other-diet/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": [
+      "{\"@context\":\"https://schema.org/\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"name\":\"Home\",\"@id\":\"https://natural-life.in\"}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"name\":\"Low GI Diet Vs Other Diet\",\"@id\":\"https://natural-life.in/low-gi-diet-vs-other-diet/\"}}]}"
+    ]
+  },
+  {
+    "file": "my-account.html",
+    "title": "My account – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/my-account/",
+    "og": {},
+    "robots": "max-image-preview:large, noindex, follow",
+    "jsonld": []
+  },
+  {
+    "file": "other-applications.html",
+    "title": "Other Applications – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/other-applications/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": [
+      "{\"@context\":\"https://schema.org/\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"name\":\"Home\",\"@id\":\"https://natural-life.in\"}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"name\":\"Other Applications\",\"@id\":\"https://natural-life.in/other-applications/\"}}]}"
+    ]
+  },
+  {
+    "file": "privacy-policy.html",
+    "title": "Privacy policy – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/privacy-policy/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": []
+  },
+  {
+    "file": "product-category_sugar.html",
+    "title": "Sugar – Sugarlif",
+    "description": "",
+    "canonical": "",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": [
+      "{\"@context\":\"https://schema.org/\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"name\":\"Home\",\"@id\":\"https://natural-life.in\"}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"name\":\"Sugar\",\"@id\":\"https://natural-life.in/product-category/sugar/\"}}]}"
+    ]
+  },
+  {
+    "file": "product-category_uncategorized.html",
+    "title": "Uncategorized – Sugarlif",
+    "description": "",
+    "canonical": "",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": [
+      "{\"@context\":\"https://schema.org/\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"name\":\"Home\",\"@id\":\"https://natural-life.in\"}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"name\":\"Uncategorized\",\"@id\":\"https://natural-life.in/product-category/uncategorized/\"}}]}"
+    ]
+  },
+  {
+    "file": "product-tag_suger.html",
+    "title": "Suger – Sugarlif",
+    "description": "",
+    "canonical": "",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": [
+      "{\"@context\":\"https://schema.org/\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"name\":\"Home\",\"@id\":\"https://natural-life.in\"}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"name\":\"Products tagged &amp;ldquo;Suger&amp;rdquo;\",\"@id\":\"https://natural-life.in/product-tag/suger/\"}}]}"
+    ]
+  },
+  {
+    "file": "products.html",
+    "title": "Products – Sugarlif",
+    "description": "",
+    "canonical": "",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": [
+      "{\"@context\":\"https://schema.org/\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"name\":\"Home\",\"@id\":\"https://natural-life.in\"}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"name\":\"Products\",\"@id\":\"https://natural-life.in/products/\"}}]}"
+    ]
+  },
+  {
+    "file": "product_sugarlif-gulab-jamun-1-kg-pack-of-1-made-from-desi-ghee-sweetened-with-sugarlif-low-gi-diet-sugar.html",
+    "title": "Gulab Jamun 1 Kg – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/product/sugarlif-gulab-jamun-1-kg-pack-of-1-made-from-desi-ghee-sweetened-with-sugarlif-low-gi-diet-sugar/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": [
+      "{\"@context\":\"https://schema.org/\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"name\":\"Home\",\"@id\":\"https://natural-life.in\"}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"name\":\"Uncategorized\",\"@id\":\"https://natural-life.in/product-category/uncategorized/\"}},{\"@type\":\"ListItem\",\"position\":3,\"item\":{\"name\":\"Gulab Jamun 1 Kg\",\"@id\":\"https://natural-life.in/product/sugarlif-gulab-jamun-1-kg-pack-of-1-made-from-desi-ghee-sweetened-with-sugarlif-low-gi-diet-sugar/\"}}]}"
+    ]
+  },
+  {
+    "file": "product_sugarlif-honey.html",
+    "title": "Honey – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/product/sugarlif-honey/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": [
+      "{\"@context\":\"https://schema.org/\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"name\":\"Home\",\"@id\":\"https://natural-life.in\"}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"name\":\"Uncategorized\",\"@id\":\"https://natural-life.in/product-category/uncategorized/\"}},{\"@type\":\"ListItem\",\"position\":3,\"item\":{\"name\":\"Honey\",\"@id\":\"https://natural-life.in/product/sugarlif-honey/\"}}]}"
+    ]
+  },
+  {
+    "file": "product_sugarlif-low-gi-diet-sugar.html",
+    "title": "Low GI Sugar – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/product/sugarlif-low-gi-diet-sugar/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": [
+      "{\"@context\":\"https://schema.org/\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"name\":\"Home\",\"@id\":\"https://natural-life.in\"}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"name\":\"Sugar\",\"@id\":\"https://natural-life.in/product-category/sugar/\"}},{\"@type\":\"ListItem\",\"position\":3,\"item\":{\"name\":\"Low GI Sugar\",\"@id\":\"https://natural-life.in/product/sugarlif-low-gi-diet-sugar/\"}}]}"
+    ]
+  },
+  {
+    "file": "product_sugarlif-low-gi-jaggery.html",
+    "title": "Low GI Jaggery 500gm – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/product/sugarlif-low-gi-jaggery/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": [
+      "{\"@context\":\"https://schema.org/\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"name\":\"Home\",\"@id\":\"https://natural-life.in\"}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"name\":\"Uncategorized\",\"@id\":\"https://natural-life.in/product-category/uncategorized/\"}},{\"@type\":\"ListItem\",\"position\":3,\"item\":{\"name\":\"Low GI Jaggery 500gm\",\"@id\":\"https://natural-life.in/product/sugarlif-low-gi-jaggery/\"}}]}"
+    ]
+  },
+  {
+    "file": "product_sugarlif-low-gi-sugar-150-sachets-pack.html",
+    "title": "Sugarlif Low GI Sugar 150 Sachets Pack – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/product/sugarlif-low-gi-sugar-150-sachets-pack/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": [
+      "{\"@context\":\"https://schema.org/\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"name\":\"Home\",\"@id\":\"https://natural-life.in\"}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"name\":\"Sugar\",\"@id\":\"https://natural-life.in/product-category/sugar/\"}},{\"@type\":\"ListItem\",\"position\":3,\"item\":{\"name\":\"Sugarlif Low GI Sugar 150 Sachets Pack\",\"@id\":\"https://natural-life.in/product/sugarlif-low-gi-sugar-150-sachets-pack/\"}}]}"
+    ]
+  },
+  {
+    "file": "product_sugarlif-low-gi-wheat-flour-atta.html",
+    "title": "Low GI Wheat Flour (Atta) – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/product/sugarlif-low-gi-wheat-flour-atta/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": [
+      "{\"@context\":\"https://schema.org/\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"name\":\"Home\",\"@id\":\"https://natural-life.in\"}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"name\":\"Uncategorized\",\"@id\":\"https://natural-life.in/product-category/uncategorized/\"}},{\"@type\":\"ListItem\",\"position\":3,\"item\":{\"name\":\"Low GI Wheat Flour (Atta)\",\"@id\":\"https://natural-life.in/product/sugarlif-low-gi-wheat-flour-atta/\"}}]}"
+    ]
+  },
+  {
+    "file": "product_sugarlif-rasgollas-1-kg-pack-of-1-sweetened-with-sugarlif-low-gi-diet-sugar.html",
+    "title": "Rasgollas 1 Kg – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/product/sugarlif-rasgollas-1-kg-pack-of-1-sweetened-with-sugarlif-low-gi-diet-sugar/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": [
+      "{\"@context\":\"https://schema.org/\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"name\":\"Home\",\"@id\":\"https://natural-life.in\"}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"name\":\"Uncategorized\",\"@id\":\"https://natural-life.in/product-category/uncategorized/\"}},{\"@type\":\"ListItem\",\"position\":3,\"item\":{\"name\":\"Rasgollas 1 Kg\",\"@id\":\"https://natural-life.in/product/sugarlif-rasgollas-1-kg-pack-of-1-sweetened-with-sugarlif-low-gi-diet-sugar/\"}}]}"
+    ]
+  },
+  {
+    "file": "refund_returns.html",
+    "title": "Refund and Returns Policy – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/refund_returns/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": []
+  },
+  {
+    "file": "sugarlif-low-gi-rice-atta.html",
+    "title": "Sugarlif® – Low GI Rice – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/sugarlif-low-gi-rice-atta/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": [
+      "{\"@context\":\"https://schema.org/\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"name\":\"Home\",\"@id\":\"https://natural-life.in\"}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"name\":\"Sugarlif\\u00ae &amp;#8211; Low GI Rice\",\"@id\":\"https://natural-life.in/sugarlif-low-gi-rice-atta/\"}}]}"
+    ]
+  },
+  {
+    "file": "sugarlif-low-gi-whole-wheat-atta.html",
+    "title": "Sugarlif® – Low Gi Whole Wheat Atta – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/sugarlif-low-gi-whole-wheat-atta/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": [
+      "{\"@context\":\"https://schema.org/\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"name\":\"Home\",\"@id\":\"https://natural-life.in\"}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"name\":\"Sugarlif\\u00ae &amp;#8211; Low Gi Whole Wheat Atta\",\"@id\":\"https://natural-life.in/sugarlif-low-gi-whole-wheat-atta/\"}}]}"
+    ]
+  },
+  {
+    "file": "team.html",
+    "title": "Team – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/team/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": [
+      "{\"@context\":\"https://schema.org/\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"name\":\"Home\",\"@id\":\"https://natural-life.in\"}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"name\":\"Team\",\"@id\":\"https://natural-life.in/team/\"}}]}"
+    ]
+  },
+  {
+    "file": "terms-and-conditions.html",
+    "title": "Terms and conditions – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/terms-and-conditions/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": []
+  },
+  {
+    "file": "why-gi-labs-canada-certification-matters-more-than-marketing-claims.html",
+    "title": "Why GI Labs Canada Certification Matters More Than Marketing Claims – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/why-gi-labs-canada-certification-matters-more-than-marketing-claims/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": []
+  },
+  {
+    "file": "wishlist.html",
+    "title": "Wishlist – Sugarlif",
+    "description": "",
+    "canonical": "https://natural-life.in/wishlist/",
+    "og": {},
+    "robots": "max-image-preview:large",
+    "jsonld": []
+  }
+]

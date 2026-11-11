@@ -1,0 +1,10 @@
+|
+
+[IMG https://natural-life.in/wp-content/plugins/smart-wishlist-for-more-convert/assets/frontend/images/empty-wishlist.svg]
+
+### YOUR WISHLIST IS EMPTY!
+
+You have not added any products to your wishlist.
+
+Go to shop
+

@@ -1,0 +1,37 @@
+Showing all 3 results
+
+[FIELD select name=orderby type= placeholder=]
+
+Default sorting
+Sort by popularity
+Sort by average rating
+Sort by latest
+Sort by price: low to high
+Sort by price: high to low
+
+-
+
+[IMG https://natural-life.in/wp-content/uploads/2023/07/Honey-300x300.png | alt: Honey]
+[IMG https://natural-life.in/wp-content/uploads/2023/07/Honey-300x300.png | alt: Honey] Add to cart
+Honey
+₹600
+Add to cart
+
+-
+
+[IMG https://natural-life.in/wp-content/uploads/2023/07/Sugar-300x300.png | alt: Low GI Sugar]
+[IMG https://natural-life.in/wp-content/uploads/2023/07/Sugar-300x300.png | alt: Low GI Sugar] Add to cart
+Low GI Sugar
+₹250 – ₹3,250Price range: ₹250 through ₹3,250
+Add to cart
+This product has multiple variants. The options may be chosen on the product page
+
+-
+
+[IMG https://natural-life.in/wp-content/uploads/2023/07/Atta-300x300.png | alt: Low GI Wheat Flour (Atta)]
+[IMG https://natural-life.in/wp-content/uploads/2023/07/Atta-300x300.png | alt: Low GI Wheat Flour (Atta)] Add to cart
+Low GI Wheat Flour (Atta)
+₹450 – ₹750Price range: ₹450 through ₹750
+Add to cart
+This product has multiple variants. The options may be chosen on the product page
+

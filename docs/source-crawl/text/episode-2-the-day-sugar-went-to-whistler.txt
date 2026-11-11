@@ -1,0 +1,79 @@
+#
+
+Every superhero has an origin story.
+
+Batman had Gotham.
+Superman had Krypton.
+
+Sugarlif?
+
+It had… Whistler.
+
+No, not the snowy ski resort where people glide gracefully down mountains while the rest of us struggle to stay upright in borrowed boots.
+
+We’re talking about the Whistler Carbohydrate Research Centre, where carbohydrates are studied with far more seriousness than most of us reserve for our annual health check-up.
+
+Now imagine being a humble spoonful of sugar.
+
+One day you’re happily sweetening tea.
+
+The next, you’re in a laboratory, being poked, prodded, measured and analysed by scientists who aren’t remotely interested in whether you make great gulab jamuns. They want answers.
+
+How quickly are you digested?
+
+How does your glucose behave?
+
+Do you really deserve to call yourself Low GI?
+
+There are no participation trophies in science.
+
+Nobody says, “Well done for trying.”
+
+The numbers either support your claim—or they don’t.
+
+Sugarlif went through that journey because extraordinary claims deserve extraordinary evidence.
+
+That’s the difference between saying “Trust us.”
+
+And saying…
+
+“Here’s the science.”
+
+For consumers, that’s reassuring.
+
+For scientists, that’s expected.
+
+And for marketing departments…
+
+Well, let’s just say science is a much tougher audience.
+
+The next time someone tells you all sugars are exactly the same, remember that somewhere in the USA, there are laboratories whose entire job is proving that they’re not.
+
+Turns out, even sugar sometimes has homework.
+
+&larr; Previous Post
+Next Post &rarr;
+
+### Leave a Comment Cancel Reply
+
+Your email address will not be published. Required fields are marked *
+Type here..
+[FIELD textarea name=comment type= placeholder=Type here..]
+
+Name*
+
+[FIELD input name=author type=text placeholder=Name*]
+
+Email*
+
+[FIELD input name=email type=text placeholder=Email*]
+
+Website
+
+[FIELD input name=url type=text placeholder=Website]
+
+[FIELD input name=wp-comment-cookies-consent type=checkbox placeholder=]
+Save my name, email, and website in this browser for the next time I comment.
+
+[FIELD input name=submit type=submit placeholder=]
+

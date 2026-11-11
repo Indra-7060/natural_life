@@ -1,0 +1,52 @@
+Showing all 5 results
+
+[FIELD select name=orderby type= placeholder=]
+
+Default sorting
+Sort by popularity
+Sort by average rating
+Sort by latest
+Sort by price: low to high
+Sort by price: high to low
+
+-
+
+[IMG https://natural-life.in/wp-content/uploads/2024/05/Gulab-Jamun-300x300.png | alt: Gulab Jamun 1 Kg]
+[IMG https://natural-life.in/wp-content/uploads/2024/05/Gulab-Jamun-300x300.png | alt: Gulab Jamun 1 Kg] Add to cart
+Gulab Jamun 1 Kg
+₹360
+Add to cart
+
+-
+
+[IMG https://natural-life.in/wp-content/uploads/2023/07/Honey-300x300.png | alt: Honey]
+[IMG https://natural-life.in/wp-content/uploads/2023/07/Honey-300x300.png | alt: Honey] Add to cart
+Honey
+₹600
+Add to cart
+
+-
+
+[IMG https://natural-life.in/wp-content/uploads/2024/02/Jaggery-300x300.png | alt: Low GI Jaggery 500gm]
+[IMG https://natural-life.in/wp-content/uploads/2024/02/Jaggery-300x300.png | alt: Low GI Jaggery 500gm] Add to cart
+Low GI Jaggery 500gm
+₹130
+Add to cart
+
+-
+
+[IMG https://natural-life.in/wp-content/uploads/2023/07/Atta-300x300.png | alt: Low GI Wheat Flour (Atta)]
+[IMG https://natural-life.in/wp-content/uploads/2023/07/Atta-300x300.png | alt: Low GI Wheat Flour (Atta)] Add to cart
+Low GI Wheat Flour (Atta)
+₹450 – ₹750Price range: ₹450 through ₹750
+Add to cart
+This product has multiple variants. The options may be chosen on the product page
+
+-
+
+[IMG https://natural-life.in/wp-content/uploads/2024/05/Rasgollas-300x300.png | alt: Rasgollas 1 Kg]
+[IMG https://natural-life.in/wp-content/uploads/2024/05/Rasgollas-300x300.png | alt: Rasgollas 1 Kg] Out of stock Read more
+Rasgollas 1 Kg
+₹325
+Read more
+

@@ -1,0 +1,37 @@
+- Login
+
+- Sign Up
+
+[FIELD input name=xoo-el-username type=text placeholder=Username / Email]
+
+[FIELD input name=xoo-el-password type=password placeholder=Password]
+
+[FIELD input name=xoo-el-rememberme type=checkbox placeholder=]
+
+Remember me
+
+Forgot Password?
+
+Sign in
+
+[FIELD input name=xoo_el_reg_email type=email placeholder=Email]
+
+[FIELD input name=xoo_el_reg_fname type=text placeholder=First Name]
+
+[FIELD input name=xoo_el_reg_lname type=text placeholder=Last Name]
+
+[FIELD input name=xoo_el_reg_pass type=password placeholder=Password]
+
+[FIELD input name=xoo_el_reg_pass_again type=password placeholder=Confirm Password]
+
+[FIELD input name=xoo_el_reg_terms type=checkbox placeholder=]
+I accept the Terms of Service and Privacy Policy
+
+Sign Up
+
+Lost your password? Please enter your username or email address. You will receive a link to create a new password via email.
+
+[FIELD input name=user_login type=text placeholder=Username / Email]
+
+Email Reset Link
+

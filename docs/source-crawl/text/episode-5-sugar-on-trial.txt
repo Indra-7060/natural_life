@@ -1,0 +1,96 @@
+#
+
+Court is now in session.
+
+The accused?
+
+Sugar.
+
+The charges?
+
+Being responsible for everything from afternoon naps to expanding waistlines.
+
+The courtroom is packed.
+
+Diet trends have arrived.
+
+Fitness influencers are taking notes.
+
+Someone in the back is whispering about keto.
+
+The judge enters.
+
+“Order!”
+
+The prosecution begins dramatically.
+
+“Your Honour… sugar is guilty.”
+
+The judge raises an eyebrow.
+
+“Do you have evidence?”
+
+Silence.
+
+Because science doesn’t convict based on rumours.
+
+It asks better questions.
+
+Which sugar?
+
+How much?
+
+Under what conditions?
+
+How was it tested?
+
+That’s why independent laboratories matter.
+
+They’re the expert witnesses.
+
+They don’t shout.
+
+They don’t speculate.
+
+They simply present the evidence.
+
+For products like Sugarlif, that evidence includes internationally recognised Low GI testing.
+
+Not because science enjoys making life complicated.
+
+Because health deserves something stronger than opinion.
+
+The verdict?
+
+Don’t believe everything you hear in the courtroom of public opinion.
+
+Sometimes the most important witness is the one wearing a lab coat.
+
+Case closed.
+
+&larr; Previous Post
+Next Post &rarr;
+
+### Leave a Comment Cancel Reply
+
+Your email address will not be published. Required fields are marked *
+Type here..
+[FIELD textarea name=comment type= placeholder=Type here..]
+
+Name*
+
+[FIELD input name=author type=text placeholder=Name*]
+
+Email*
+
+[FIELD input name=email type=text placeholder=Email*]
+
+Website
+
+[FIELD input name=url type=text placeholder=Website]
+
+[FIELD input name=wp-comment-cookies-consent type=checkbox placeholder=]
+Save my name, email, and website in this browser for the next time I comment.
+
+[FIELD input name=submit type=submit placeholder=]
+

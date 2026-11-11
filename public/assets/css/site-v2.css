@@ -541,3 +541,22 @@ section:has(> .shell > .jpanel) .section-head > .link-arrow { display: none; }
   .pcard__add { min-height: 40px; padding-block: 8px; }
   .herox__dot { height: 40px; }
 }
+
+/* footer on phones: everything centred so it matches the centred copyright lines */
+@media (max-width: 575.98px) {
+  .footer-brand { text-align: center; }
+  .footer-brand img { display: block; margin-inline: auto; }
+  .footer-brand p { margin-inline: auto; max-width: 34ch; }
+  .footer-social { justify-content: center; }
+  .footer-market { justify-content: center; text-align: center; }
+  .footer-market span { text-align: center; }
+  /* room for the back-to-top button so it never covers the legal links */
+  .footer-bottom { padding-bottom: 76px; }
+}
+
+/* phones and tablets: no scrollbar strip beside the page (touch screens float theirs over the content anyway);
+   scrolling itself is unchanged */
+@media (max-width: 991.98px) {
+  html { scrollbar-width: none; }
+  html::-webkit-scrollbar { width: 0; height: 0; display: none; }
+}

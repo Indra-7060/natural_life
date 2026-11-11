@@ -163,7 +163,7 @@ a.kpi:hover { border-color: var(--sage); color: inherit; }
 .login__form { display: grid; place-items: center; padding: 32px; background: #fff; }
 .login__form > div { width: 100%; max-width: 380px; }
 
-@media (max-width: 1199.98px) { .dash-grid { grid-template-columns: 1fr; } }
+@media (max-width: 1199.98px) { .dash-grid { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 991.98px) {
   .a-shell { grid-template-columns: minmax(0, 1fr); }
   .a-side { position: fixed; left: 0; top: 0; width: var(--side); z-index: 1050; transform: translateX(-100%); transition: transform .25s; }

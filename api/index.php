@@ -24,6 +24,15 @@ if (! empty($_SERVER['HTTP_X_REAL_IP']) && filter_var($_SERVER['HTTP_X_REAL_IP']
     $_SERVER['REMOTE_ADDR'] = $_SERVER['HTTP_X_REAL_IP'];
 }
 
+// Vercel serves every request over HTTPS (plain HTTP is redirected before it gets here), but the
+// PHP runtime does not say so. Without this the application redirects to HTTPS again and again.
+if (getenv('VERCEL')) {
+    $_SERVER['HTTPS']                  = 'on';
+    $_SERVER['HTTP_X_FORWARDED_PROTO'] = 'https';
+    $_SERVER['REQUEST_SCHEME']         = 'https';
+    $_SERVER['SERVER_PORT']            = '443';
+}
+
 // Make the framework see the request as if public/index.php had been called directly.
 $_SERVER['SCRIPT_NAME']     = '/index.php';
 $_SERVER['PHP_SELF']        = '/index.php';
